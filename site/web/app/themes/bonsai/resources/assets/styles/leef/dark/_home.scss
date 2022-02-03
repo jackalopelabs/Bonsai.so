@@ -1,0 +1,6 @@
+$bg-dark-2: #191c21;
+$bg-dark-0: lighten ($bg-dark-2,20%);
+
+#tools {
+  background: $bg-dark-0 !important;
+}

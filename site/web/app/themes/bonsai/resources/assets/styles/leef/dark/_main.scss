@@ -1,0 +1,244 @@
+$bg-dark-1: #111;
+$bg-dark-2: #191c21;
+$bg-dark-3: rgba(0, 0, 0, 0.9);
+$bg-dark-0: $gray-700;
+
+.bg-dark-0 {
+  background: $bg-dark-0;
+}
+
+.bg-dark-1 {
+  background: $bg-dark-1;
+}
+
+.bg-dark-2 {
+  background: $bg-dark-2;
+}
+
+.bg-dark-3 {
+  background: $bg-dark-3;
+}
+
+body {
+  background: $bg-dark-1 !important;
+  color: white !important;
+}
+
+code {
+  color: #e83e8c !important;
+}
+
+// Header
+.brand {
+  #logo {
+    .st0 {
+      fill: #fff !important;
+    }
+  }
+}
+
+.nav-link {
+  color: $gray-300;
+}
+
+.badge-success,
+.badge-primary {
+  color: $bg-dark-1 !important;
+}
+
+// Rooms
+////////
+
+// Bonsai
+#bonsai-room {
+  #logo {
+    .st0 {
+      fill: #fff;
+    }
+  }
+}
+
+#unlock-icon {
+  fill: white !important;
+}
+
+#thefutur-icon {
+  .cls-1 {
+    fill: #fff !important;
+  }
+}
+
+#owl3d-icon {
+  fill: white !important;
+}
+
+// unreal
+#unreal-room {
+  #unreal-logo {
+    .st0 {
+      fill: #fff;
+    }
+  }
+}
+
+#nav-menu {
+  color: white !important;
+  letter-spacing: 0.1rem !important;
+}
+
+#grid {
+  h5 {
+    color: $gray-300 !important;
+  }
+
+  .disabled {
+    background: $bg-dark-2 !important;
+
+    h5 {
+      color: $gray-800 !important;
+    }
+  }
+}
+
+// accordion
+.card {
+  box-shadow: none !important;
+  background: $bg-dark-2;
+
+  .card-body {
+    background: $bg-dark-2 !important;
+  }
+
+  .nav-bar {
+    background: $bg-dark-2 !important;
+
+    .nav-tabs {
+      border-image-source: none !important;
+      border-bottom: 1px solid $bg-dark-2 !important;
+
+      .nav-item {
+        background: $bg-dark-2 !important;
+        border-radius: 8px;
+
+        .active {
+          background-color: $bg-dark-2 !important;
+        }
+      }
+    }
+  }
+}
+
+#accordion {
+  ul {
+    li {
+      a.toggle {
+        border: 1px solid $bg-dark-1 !important;
+
+        &:hover {
+          background-color: $bg-dark-1 !important;
+        }
+      }
+    }
+  }
+}
+
+.list-group-item {
+  background-color: $bg-dark-3 !important;
+}
+
+// Buttons & UI
+.badge,
+.btn {
+  &-light {
+    background: $bg-dark-3 !important;
+    color: #fff !important;
+  }
+
+  &:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: none !important;
+  }
+}
+
+// Sensei UI
+.sensei {
+  .meter {
+    background: $bg-dark-1;
+  }
+
+  .status {
+    background: $bg-dark-1;
+  }
+
+  .sensei-message {
+    background: $bg-dark-2 !important;
+
+    a {
+      color: $secondary !important;
+    }
+  }
+
+  // Lesson
+  .sensei-breadcrumb {
+    background: none !important;
+  }
+
+  // My Courses
+  #user-course-status-toggle {
+    #sensei-user-courses-all-action {
+      background: $bg-dark-1;
+      border-color: $bg-dark-0;
+      border-bottom: 1px solid $bg-dark-0 !important;
+      color: white;
+    }
+
+    #sensei-user-courses-all-action.active {
+      border-color: $secondary;
+      border-bottom: 1px solid $secondary !important;
+    }
+
+    #user-course-status-toggle a {
+      color: $secondary;
+    }
+
+    border-bottom: 1px solid $bg-dark-0 !important;
+  }
+}
+
+// Forms
+input,
+textarea {
+  background: $bg-dark-3 !important;
+  border: none !important;
+  color: white !important;
+}
+
+.ginput_total {
+  box-shadow: none !important;
+}
+
+.StripeElement {
+  // color: white !important;
+  // background-color: $bg-dark-3 !important;
+  border: none !important;
+}
+
+.gform_button {
+  background-color: $primary !important;
+}
+
+// Modals
+.modal-header {
+  border-bottom: 1px solid #000 !important;
+
+  .close {
+    span {
+      color: white;
+    }
+  }
+}
+
+.modal-content {
+  background-color: #111 !important;
+  border: none;
+}

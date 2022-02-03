@@ -1,0 +1,119 @@
+$bg-dark-2: #191c21;
+
+.list-group-flush {
+  .svg-inline--fa {
+    @extend .mr-2;
+  }
+}
+
+.scrolling-wrapper {
+  // overflow: inherit !important;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 1px;
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $gray-400;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+}
+
+// Countdown Timer
+#timer {
+  span {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1;
+    padding: 10px;
+  }
+
+  #minutes {
+    color: #acacac;
+  }
+
+  #seconds {
+    color: $primary;
+  }
+}
+
+// Animated gradient borders
+.gradient-border {
+  --borderWidth: 3px;
+
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, $grad-3, $grad-4, $grad-5, $grad-6, $grad-7, $grad-8);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+// Login Modal
+.login-remember {
+  @extend .mt-2;
+  @extend .text-muted;
+}
+
+.button-primary {
+  background: $secondary !important;
+  border-radius: 4px !important;
+
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-success;
+  @extend .my-3;
+  @extend .px-3;
+}
+
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

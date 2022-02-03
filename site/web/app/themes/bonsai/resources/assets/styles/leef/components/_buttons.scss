@@ -1,0 +1,64 @@
+.btn {
+  box-shadow: none;
+  transition: $btn-transition;
+
+  &:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 14px 6px rgba(211, 214, 231, 0.5);
+  }
+}
+
+.btn-no-fx {
+  box-shadow: none;
+
+  &:hover {
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-round {
+  border-radius: 100px;
+  padding: 0.5rem 2rem !important;
+}
+
+.btn-primary {
+  border: none;
+
+  // @extend .primary-gradient;
+
+  &:hover {
+    // @extend .secondary-gradient;
+  }
+}
+
+// .btn-secondary {
+//   @extend .dark-gradient;
+// }
+
+.btn-outline-primary {
+  &:hover {
+    color: white !important;
+  }
+}
+
+.newsletter-btn {
+  padding: 1.45rem 2.24rem 0.5rem;
+  margin-top: -1.25rem;
+  z-index: 0;
+  color: $gray-100;
+  transition: $btn-transition;
+
+  @extend .btn;
+  // @extend .btn-lg;
+  @extend .btn-success;
+
+  &:hover {
+    transform: translateY(2px) !important;
+    box-shadow: 0 10px 14px 6px rgba(211, 214, 231, 0.5);
+  }
+}
+
+.login-btn {
+  padding-top: 11px !important;
+}

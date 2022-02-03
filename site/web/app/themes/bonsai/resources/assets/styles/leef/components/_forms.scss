@@ -1,0 +1,400 @@
+// Development
+.gfield_creditcard_warning {
+  .gfield_creditcard_warning_message {
+    @extend .d-none;
+  }
+}
+
+input.default {
+  font-size: 16px;
+  padding: 1.5rem 1rem 1.25rem;
+  border-radius: 6px;
+}
+
+// Forms
+.anti-sr-only {
+  position: inherit !important;
+  width: 100% !important;
+  height: 100% !important;
+  clip: inherit !important;
+  white-space: inherit !important;
+  clip-path: inherit !important;
+}
+
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+// global, GF to BS conversion
+.gfield_required {
+  color: $danger;
+  padding-left: 2px;
+}
+
+.gform_wrapper {
+  // label {
+  //   @extend .screen-reader-text;
+  // }
+
+  .gfield {
+    list-style: none;
+
+    @extend .p-0;
+
+    .gfield_label {
+      @extend .screen-reader-text;
+    }
+  }
+
+  .button {
+    @extend .btn;
+  }
+}
+
+.gform_confirmation_message {
+  @extend .alert;
+  @extend .alert-warning;
+}
+
+.gform_fields {
+  margin: 1px !important;
+
+  @extend .p-0;
+}
+
+// Gravity Forms Styling
+.full-width-gf {
+  input,
+  textarea {
+    @extend .form-control;
+    @extend .w-100;
+  }
+
+  .gform_button {
+    @extend .btn;
+    @extend .btn-lg;
+    @extend .btn-primary;
+    @extend .w-100;
+  }
+}
+
+select {
+  @extend .form-control;
+  @extend .w-100;
+}
+
+.ginput_total {
+  color: #00c4cc !important;
+  font-size: 1rem !important;
+
+  @extend .btn;
+  @extend .btn-light;
+}
+
+.default-form-ext {
+  @extend .default;
+  @extend .w-100;
+  @extend .form-control;
+  @extend .mb-2;
+  @extend .mr-2;
+}
+
+// // Form #0: Login
+#input_1,
+#input_2 {
+  @extend .default-form-ext;
+}
+
+#gform_0 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #1: Bonsai
+#input_1_1,
+#input_1_4_5 {
+  @extend .default-form-ext;
+}
+
+#input_1_2 {
+  border-radius: 4px;
+  padding: 0 12px !important;
+
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
+#input_1_4_1 {
+  border-radius: 6px;
+  padding: 1rem 1rem 2rem;
+}
+
+#gform_1 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #2 Questions
+#input_2,
+#input_2_1,
+#input_2_2 {
+  @extend .default-form-ext;
+}
+
+#gform_2 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #3: Enroll
+#input_3_1,
+#input_3_3_3,
+#input_3_3_6,
+#input_3_5,
+#input_3_6,
+#input_3_6_2 {
+  @extend .default-form-ext;
+}
+
+#choice_3_1 {
+  margin: -1px 4px 0 0 !important;
+}
+
+#input_3_3_3_container,
+#input_3_3_6_container {
+  label {
+    @extend .screen-reader-text;
+  }
+}
+
+#gform_3 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #4
+#input_4,
+#input_4_1,
+#input_4_2,
+#input_4_4_5, {
+  @extend .default-form-ext;
+}
+
+#input_4_2,
+#input_4_5 {
+  border-radius: 4px;
+  padding: 0 12px !important;
+
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
+#input_4_4_1 {
+  border-radius: 6px;
+  padding: 1rem 1rem 2rem;
+}
+
+#gform_4 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #5
+#input_5,
+#input_5_1,
+#input_5_2,
+#input_5_4_5, {
+  @extend .default-form-ext;
+}
+
+#input_5_2,
+#input_5_5 {
+  border-radius: 4px;
+  padding: 0 12px !important;
+
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
+#input_5_4_1 {
+  border-radius: 6px;
+  padding: 1rem 1rem 2rem;
+}
+
+#gform_5 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #6
+#input_6,
+#input_6_1,
+#input_6_2,
+#input_6_4_5, {
+  @extend .default-form-ext;
+}
+
+#input_6_2,
+#input_6_5 {
+  border-radius: 4px;
+  padding: 0 12px !important;
+
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
+#input_6_4_1 {
+  border-radius: 6px;
+  padding: 1rem 1rem 2rem;
+}
+
+#gform_6 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #7 Questions
+#input_7_1 {
+  @extend .default-form-ext;
+}
+
+#gform_7 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// Login Form
+.login-username,
+.login-password {
+  @extend .flex-col-c;
+  @extend .mb-0;
+
+  input {
+    @extend .default-form-ext;
+  }
+}
+
+// Safari fix for glossy dropdown field inputs
+// .gfield_select {
+//   -webkit-appearance: none !important;
+// }
+
+// Lastpass Hack
+#__lpform_input_1,
+#__lpform_input_2,
+#__lpform_input_1_numspan,
+#__lpform_input_2_numspan {
+  @extend .d-none;
+}
