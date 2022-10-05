@@ -1,11 +1,14 @@
-![Project Bonsai Screenshot](https://jackalope.io/app/uploads/2020/06/screenshot.png)
-# Project Bonsai
+[![Bonsai Screenshot](https://bonsai.so/app/uploads/2022/10/screenshot-1.png)](https://bonsai.so)
+# Bonsai
 
-[Project Bonsai](https://bonsai.jackalope.io) is a secure and modern Wordpress stack.
+[Bonsai](https://bonsai.so) is a secure and modern Wordpress stack.
 
-**The goal:** To simplify the process of building a Roots Wordpress site with a streamlined configuration with a corresponding [tutorial videos](https://bonsai.jackalope.io).
+**The goal:** To simplify the process of building a Roots Wordpress site with a streamlined configuration with a corresponding [tutorial videos](https://bonsai.so/bonsai-quick-setup/).
 
 Bonsai is a custom configuration of [Wordpress](https://wordpress.org/), [Roots](https://roots.io/), [Trellis](https://roots.io/trellis), [Bedrock](https://roots.io/bedrock), [Sage](https://roots.io/sage), [Bootstrap](https://getbootstrap.com/) and other open source projects.
+
+Use Bonsai to apply for billions of dollars of web3 grants. Find a list of the top 25 grants, and application templates [here](https://bonsai.so/resources).
+[![Steal My dApp, I Dare You](https://bonsai.so/app/uploads/2022/10/Screen-Shot-2022-09-29-at-3.25.43-PM.png)](https://youtu.be/IQvjojf65dg)
 
 ### Tutorial
 Trello board: [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
@@ -18,14 +21,14 @@ We're going to take a few minutes to setup all the requirements to ensure that d
 
 ## Download Bonsai
 
-Download project Bonsai from the [official website](https://bonsai.jackalope.io) or from the [github repository](https://github.com/jackalopeio/bonsai/).
+Download project Bonsai from the [official website](https://bonsai.so) or from the [github repository](https://github.com/jackalopeio/bonsai.so/).
 
 Don't forget to move Bonsai from your downloads folder into your `~/Sites` directory.
 
 > OR
 
 To download with the command line, run:
- `cd ~/sites` and `git clone https://github.com/jackalopeio/Bonsai.git`
+ `cd ~/sites` and `git clone https://github.com/jackalopeio/Bonsai.so.git`
 
 ## Requirements
 
@@ -49,11 +52,11 @@ To download with the command line, run:
  - [Virtualbox](https://www.virtualbox.org/wiki/Downloads): `brew cask install --appdir="/Applications" virtualbox`
  - [Vagrant](https://www.vagrantup.com/downloads.html): `brew cask install --appdir="/Applications" vagrant`
  - [Vagrant Manager](https://github.com/lanayotech/vagrant-manager/releases): `brew cask install --appdir="/Applications" vagrant-manager`
+
+ Optional:
  - [Atom](https://atom.io/): `brew cask install --appdir="/Applications" atom`
  - [iTerm2](https://www.iterm2.com/): `brew cask install --appdir="/Applications" iterm2`
  - Github Desktop App: `brew cask install --appdir="/Applications" github-desktop`
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
 >## First, Check
 >If you're recreating a project, you may want to check these things just to be sure:
@@ -111,11 +114,44 @@ Make sure that your SSH connections are working by SSH'ing into the servers:
  - Production, run: `ssh root@example.com`
 
 # Configure Bonsai
+- Create Github Repository
+- Configure Trellis/group_vars
+- Configre Trellis/hosts
+- Configure Security (See Bonsai masterclass for security instructions)
+- Configure site/wp-cli.yml
+- Configure site/scripts
 
-Under construction, for the rest of the tutorial look at:
+Official Tutorial: [Bonsai Configuration] (https://bonsai.so/bonsai-config/)
+
+# Create Local Environment
+Set Permissions:
+- Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
+
+Deploy Local Environment:
+Run: `cd ~/sites/Bonsai/site/scripts && ./development.sh`
+
+Official Tutorial: [Deploy Local Environment] (https://bonsai.so/bonsai-create-local-environment/)
+
+#Deploy Staging Environment
+- Commit and Publish to Github
+- Check and verify DNS has propagated
+- Run: `cd ~/sites/bonsai/site/scripts && ./staging.sh`
+
+If you have any permission errors running the script, you need to give your scripts permission. Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
+
+Official Tutorial: [Deploy Staging Environment] (https://bonsai.so/bonsai-deploy-staging-environment/)
+
+#Deploy Production Environment
+- Run: `cd ~/sites/bonsai/site/scripts && ./production.sh`
+
+If you have any permission errors running the script, you need to give your scripts permission. Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
+
+Official Tutorial: [Deploy Staging Environment] (https://bonsai.so/bonsai-deploy-staging-environment/)
+
+Additional Tutorials:
 
 Trello board: [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
 
 Roots Trellis Docs: [The Basics](https://roots.io/docs/trellis/master/wordpress-sites/#normal-settings)
 
-For a video tutorial on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.jackalope.io) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).
+For a video tutorial on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.so) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).
