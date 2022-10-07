@@ -7,7 +7,7 @@
     <a href="/bonsai-speed-run/"><i class="fas fa-expand h5 text-primary pointer ml-3"></i></a>
   </div>
   @guest
-    <a href="#tab3-4" class="btn btn-sm btn-secondary pt-1" style="color: #111;" data-toggle="tab" role="tab">Access @title(24) <div class="badge badge-secondary text-white ml-2">$15/m</div></a>
+    <a href="#tab3-4" class="btn btn-sm btn-secondary pt-1" style="color: #111;" data-toggle="tab" role="tab">Subscribe <div class="badge badge-secondary text-white ml-2">$15/m</div></a>
   @endguest
 </div>
 

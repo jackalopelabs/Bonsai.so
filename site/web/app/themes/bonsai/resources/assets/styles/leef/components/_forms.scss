@@ -78,6 +78,16 @@ input.default {
   @extend .p-0;
 }
 
+// safari / iOS fix
+.gfield_select {
+  -webkit-appearance: none !important;
+}
+
+.gform_button {
+  @extend .btn;
+  @extend .btn-success;
+}
+
 // Gravity Forms Styling
 .full-width-gf {
   input,
@@ -89,7 +99,7 @@ input.default {
   .gform_button {
     @extend .btn;
     @extend .btn-lg;
-    @extend .btn-primary;
+    @extend .btn-success;
     @extend .w-100;
   }
 }
@@ -198,25 +208,11 @@ select {
   }
 }
 
-// // Form #3: Enroll
+// Form #3: Signup 00
 #input_3_1,
-#input_3_3_3,
-#input_3_3_6,
-#input_3_5,
 #input_3_6,
 #input_3_6_2 {
   @extend .default-form-ext;
-}
-
-#choice_3_1 {
-  margin: -1px 4px 0 0 !important;
-}
-
-#input_3_3_3_container,
-#input_3_3_6_container {
-  label {
-    @extend .screen-reader-text;
-  }
 }
 
 #gform_3 {
@@ -230,7 +226,7 @@ select {
       padding: 0.95rem 1rem 0.8rem !important;
 
       @extend .w-100;
-      @extend .btn-lg;
+      // @extend .btn-lg;
       @extend .btn-primary;
     }
   }
@@ -371,6 +367,258 @@ select {
       @extend .w-100;
       @extend .btn-lg;
       @extend .btn-primary;
+    }
+  }
+}
+
+// Form #10: Complete Signup
+#gform_wrapper_10 {
+  margin-top: 0 !important;
+}
+
+#input_10_1,
+#input_10_3_3,
+#input_10_3_6,
+#input_10_5,
+#input_10_14_3,
+#input_10_13_1,
+#input_10_13_2,
+#input_10_13_3,
+#input_10_13_5 {
+  @extend .default-form-ext;
+}
+
+#input_10_14 label {
+  @extend .screen-reader-text;
+}
+
+#gform_10 select {
+  border-radius: 4px;
+  padding: 0 12px !important;
+
+  @extend .bg-secondary;
+  @extend .text-white;
+}
+
+#gform_10 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      // @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #11: Signup 01
+#input_11_1,
+#input_11_6,
+#input_11_6_2 {
+  @extend .default-form-ext;
+}
+
+#gform_11 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      // @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #12: Signup 02
+#input_12_1,
+#input_12_6,
+#input_12_6_2 {
+  @extend .default-form-ext;
+}
+
+#gform_12 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      // @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #13: Signup 03
+#input_13_1,
+#input_13_6,
+#input_13_6_2 {
+  @extend .default-form-ext;
+}
+
+#gform_13 {
+  .gform_footer {
+    @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .w-100;
+      // @extend .btn-lg;
+      @extend .btn-primary;
+    }
+  }
+}
+
+// // Form #14: Signup Bonsai Basic
+#input_14_1,
+#input_14_2 {
+  @extend .default-form-ext;
+}
+
+#gform_14 {
+  .gfield_label {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: -8px !important;
+    font-weight: 100;
+    font-size: 0.85rem;
+
+    @extend .mb-0;
+  }
+
+  .gform_footer {
+    .button {
+      @extend .mt-3;
+      @extend .btn-lg;
+    }
+  }
+}
+
+// // Form #15: Signup Bonsai University
+#input_15_1,
+#input_15_2 {
+  @extend .default-form-ext;
+}
+
+#gform_15 {
+  .gfield_label {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: -8px !important;
+    font-weight: 100;
+    font-size: 0.85rem;
+
+    @extend .mb-0;
+  }
+
+  .gform_footer {
+    .button {
+      @extend .mt-3;
+      @extend .btn-lg;
+    }
+  }
+}
+
+// // Form #17: Signup Bonsai University Web3
+#input_17_1,
+#input_17_2,
+#input_17_4_3,
+#input_17_4_6 {
+  background: rgba(0, 0, 0, 0.9);
+  border: none !important;
+  color: white !important;
+
+  @extend .default-form-ext;
+}
+
+#field_17_4 {
+  legend {
+    padding-bottom: 6px !important;
+  }
+
+  .name_first,
+  .name_last {
+    label {
+      @extend .d-none;
+    }
+  }
+}
+
+#gform_17 {
+  .gfield_label {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: -8px !important;
+    font-weight: 100;
+    font-size: 0.85rem;
+
+    @extend .mb-0;
+  }
+
+  .gform_footer {
+    .button {
+      @extend .mt-3;
+      @extend .btn-lg;
+    }
+  }
+}
+
+// // Form #18: Grants
+#input_18_1,
+#input_18_2,
+#input_18_3,
+#input_18_5,
+#input_18_6,
+#input_18_7,
+#input_18_8 {
+  background: rgba(0, 0, 0, 0.9);
+  border: none !important;
+  color: white !important;
+
+  @extend .default-form-ext;
+}
+
+#field_18_9 {
+  .gfield_label {
+    position: inherit !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: -8px !important;
+    font-weight: 100;
+    font-size: 0.85rem;
+
+    @extend .mb-0;
+  }
+}
+
+#gform_18 {
+  .gform_footer {
+    .button {
+      @extend .mt-3;
+      @extend .btn-lg;
     }
   }
 }

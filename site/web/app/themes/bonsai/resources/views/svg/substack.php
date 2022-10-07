@@ -1,0 +1,1 @@
+<svg id="substack-icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M51.652 18.888H3.346v-6.5h48.308v6.5h-.002Zm-48.306 5.89V55L27.5 41.502 51.654 55V24.777H3.346ZM51.654 0H3.346v6.5h48.308V0Z"/></svg>

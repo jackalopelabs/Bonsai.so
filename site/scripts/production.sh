@@ -28,13 +28,15 @@ wp @production theme activate bonsai/resources
 wp @production plugin activate --all
 
 # Install GF Plugins
-wp @production gf install --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @production gf install gravityformsadvancedpostcreation --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @production gf install gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @production gf install gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @production gf install gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @production gf install gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @staging gf license update 8621321e72cf1753826be6794c56e0ae
+wp @production gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformstrello --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @production gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # DB
-./sync.sh development production
+# ./sync.sh development production

@@ -46,7 +46,7 @@ code {
   color: $bg-dark-1 !important;
 }
 
-// Rooms
+// Icons
 ////////
 
 // Bonsai
@@ -60,6 +60,22 @@ code {
 
 #unlock-icon {
   fill: white !important;
+}
+
+#masterclass-icon {
+  fill: white !important;
+}
+
+#substack-icon {
+  path {
+    fill: white !important;
+  }
+}
+
+#eventbrite-icon {
+  path {
+    fill: white !important;
+  }
 }
 
 #thefutur-icon {
@@ -84,20 +100,6 @@ code {
 #nav-menu {
   color: white !important;
   letter-spacing: 0.1rem !important;
-}
-
-#grid {
-  h5 {
-    color: $gray-300 !important;
-  }
-
-  .disabled {
-    background: $bg-dark-2 !important;
-
-    h5 {
-      color: $gray-800 !important;
-    }
-  }
 }
 
 // accordion
@@ -138,12 +140,44 @@ code {
           background-color: $bg-dark-1 !important;
         }
       }
+
+      a.toggle-ext {
+        border: 1px solid $bg-dark-1 !important;
+        color: $gray-300;
+
+        &:hover {
+          color: $primary;
+          background-color: $bg-dark-1 !important;
+        }
+      }
     }
   }
 }
 
 .list-group-item {
   background-color: $bg-dark-3 !important;
+}
+
+// Grid
+#grid {
+  h5 {
+    color: $gray-300 !important;
+  }
+
+  .disabled {
+    background: $bg-dark-2 !important;
+
+    h5 {
+      color: $gray-800 !important;
+    }
+  }
+
+  #communities {
+    .card {
+      border: none !important;
+      padding: inherit;
+    }
+  }
 }
 
 // Buttons & UI
@@ -206,8 +240,11 @@ code {
 }
 
 // Forms
-input,
-textarea {
+#user_login,
+#user_pass,
+.ginput_container input,
+.password_input_container > input,
+.textarea {
   background: $bg-dark-3 !important;
   border: none !important;
   color: white !important;
@@ -221,10 +258,6 @@ textarea {
   // color: white !important;
   // background-color: $bg-dark-3 !important;
   border: none !important;
-}
-
-.gform_button {
-  background-color: $primary !important;
 }
 
 // Modals

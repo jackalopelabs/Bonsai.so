@@ -8,11 +8,13 @@
 
       @guest
         @include('partials.hero')
-        @include('partials.explore')
         @include('partials.pricing')
+        @include('partials.explore')
+        @include('partials.reviews')
       @endguest
 
       @user
+        @include('partials.pricing')
         @include('partials.explore')
       @enduser
 
@@ -24,6 +26,5 @@
     @include('partials.footer')
     @wpfoot())
   </body>
-  <script src="https://fast.wistia.com/embed/medias/y1wyzd3cy4.jsonp" defer></script>
-  <script src="https://fast.wistia.com/assets/external/E-v1.js" defer></script>
+  <script src="https://fast.wistia.com/embed/medias/226bn31yu0.jsonp" defer></script><script src="https://fast.wistia.com/assets/external/E-v1.js" defer></script>
 </html>

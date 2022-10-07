@@ -15,7 +15,7 @@
         </p>
       </a>
       <div class="text-center">
-        <p class="badge badge-light">v0.0.10</p>
+        @include('partials.components.version')
       </div>
     </div>
     <div class="flex-s-b">

@@ -54,7 +54,7 @@ wp @development post create --post_type=post --post_title="Read Me" ./content/re
 
 # Wordpress Settings
 wp @development option update blogname "Bonsai.so"
-wp @development option update blogdescription "The Virtual Campus"
+wp @development option update blogdescription "Patreon for Web3"
 wp @development option update admin_email mason@jackalope.io
 wp @development user update 1 --user_pass=admin
 wp @development option update show_on_front "page"
@@ -66,21 +66,23 @@ wp @development rewrite structure '/%postname%/'
 ###############
 
 # Install GF Plugins
-wp @development gf install --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @development gf install gravityformsadvancedpostcreation --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @development gf install gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @development gf install gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @development gf install gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @development gf install gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf license update 8621321e72cf1753826be6794c56e0ae
+wp @development gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformstrello --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Update GF Plugins
-# wp @development gf update --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf update gravityformsadvancedpostcreation --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf update gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf update gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf update gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf update gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae --activate
+# wp @development gf update --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Create Bonsai Form: ID 1
 # wp @development gf form create "Bonsai Form"

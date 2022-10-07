@@ -5,7 +5,7 @@
       <div class="modal-content">
         <div class="modal-header">
           @guest
-            <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-sign-in-alt mute mr-2"></i> Login</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-sign-in-alt mute mr-2"></i> Log in</h5>
           @endguest
           @user
             <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-tachometer-alt mute mr-2"></i> Dashboard</h5>
@@ -14,28 +14,51 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="">
           @guest
-            <p class="text-muted">Login to your account to access your communities</p>
+            <p class="mb-0 text-muted pl-4 pt-2"><small>Don't have an account? <a href="#" data-target="#signupModal" data-toggle="modal" data-dismiss="modal" aria-label="Close">Sign up here.</a></small></p>
             @php dynamic_sidebar('sidebar-footer') @endphp
+
+            @if( get_field('web3_cta') )
+              <div class="mb-4 pl-4" style="">
+                <p><i class="fab fa-ethereum mr-2"></i><small>@php the_field('web3_cta', 2); @endphp</small></p>
+                @if (is_singular( 'post' ))
+                  <a href="/sign-in-with-ethereum/" class="btn btn-dark">Sign in with Ethereum</a>
+                @else
+                  @php
+                    $my_postid = 2; //This is page id or post id
+                    $content_post = get_post($my_postid);
+                    $content = $content_post->post_content;
+                    $content = apply_filters('the_content', $content);
+                    $content = str_replace(']]>', ']]&gt;', $content);
+                    echo $content;
+                  @endphp
+                @endif
+              </div>
+            @endif
+
           @endguest
-          @role('administrator')
-            {{-- <p><a href="" data-toggle="modal" data-target="#editModal">Edit Page</a></p>
-            <p><a href="" data-toggle="modal" data-target="#editModal">Edit</a></p>
-            <p><a href="" data-toggle="modal" data-target="#postModal">Create a Post</a></p> --}}
-            <p><a href="/wp/wp-admin/edit.php">Edit Posts</a></p>
-          @endrole
-          @guest
-            <p><a href="/wp/wp-login.php?action=lostpassword">Forgot password?</a></p>
-            <p><a class="" href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close">Create new account</a></p>
-          @endguest
-          @user
-            <p><a href="/wp/wp-admin/index.php">Full Dashboard</a></p>
-            <p><a class="" href="/wp/wp-login.php?action=logout">Logout</a></p>
-          @enduser
+          <div class="pl-4">
+            @role('administrator')
+              {{-- <p><a href="" data-toggle="modal" data-target="#editModal">Edit Page</a></p>
+              <p><a href="" data-toggle="modal" data-target="#editModal">Edit</a></p>
+              <p><a href="" data-toggle="modal" data-target="#postModal">Create a Post</a></p> --}}
+              <p><a href="/wp/wp-admin/admin.php?page=bonsai-settings"><i class="fas fa-cog mr-2 mute"></i> Bonsai Settings</a></p>
+              <p><a href="/wp/wp-admin/edit.php"><i class="fas fa-edit mr-2 mute"></i> Edit Posts</a></p>
+            @endrole
+            @guest
+              <p><a href="/wp/wp-login.php?action=lostpassword"><i class="far fa-question-circle mr-2 mute"></i> Forgot password</a></p>
+              <p><a class="" href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close"><i class="fas fa-user-plus mr-2 mute"></i> Create new account</a></p>
+            @endguest
+            @user
+              <p><a href="/cancel"><i class="fas fa-shopping-bag mr-2 mute"></i> Manage Subscriptions</a></p>
+              <p><a href="/wp/wp-admin/index.php"><i class="fas fa-tachometer-alt mr-2 mute"></i> Full Dashboard</a></p>
+              <p><a class="" href="/wp/wp-login.php?action=logout"><i class="fas fa-sign-out-alt mr-2 mute"></i> Logout</a></p>
+            @enduser
+          </div>
         </div>
         <a ahref="#" class="pointer text-center mb-3" data-dismiss="modal" aria-label="Close">
-          <span class="uppercase mute smaller" aria-hidden="true">No thanks</span>
+          <span class="uppercase mute smaller" aria-hidden="true"><i class="fas fa-acorn mr-2"></i> Close</span>
         </a>
       </div>
     </div>

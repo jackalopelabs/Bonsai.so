@@ -1,11 +1,11 @@
 // import then needed Font Awesome functionality
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 // import { fas } from '@fortawesome/free-solid-svg-icons'
-import { faArrowRight, faArrowLeft, faPlay, faList, faEnvelope, faGraduationCap, faBook, faShoppingBag, faBell, faDownload, faSignInAlt, faExpand, faVrCardboard, faTachometerAlt, faCommentAlt, faHouseUser, faBuilding, faPowerOff, faUsers, faThumbtack, faCubes, faServer, faExternalLinkAlt, faInfoCircle, faFilePowerpoint, faCompass, faChartBar, faAlignRight, faLocationArrow, faFont } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faArrowLeft, faPlay, faList, faEnvelope, faGraduationCap, faBook, faShoppingBag, faBell, faDownload, faSignInAlt, faExpand, faVrCardboard, faTachometerAlt, faCommentAlt, faHome, faBuilding, faPowerOff, faUsers, faThumbtack, faCubes, faServer, faExternalLinkAlt, faInfoCircle, faFilePowerpoint, faCompass, faChartBar, faAlignRight, faLocationArrow, faFont, faPalette, faCampground, faEdit, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 // import { far } from '@fortawesome/free-regular-svg-icons'
 import { faQuestionCircle, faCalendarAlt, faDotCircle } from '@fortawesome/free-regular-svg-icons'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faGithub, faTrello, faSlack, faYoutube, faInstagram, faMedium, faTiktok, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTrello, faSlack, faYoutube, faInstagram, faMedium, faTiktok, faDiscord, faEthereum, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 // Bonsai Pro will manually add each icon for a performance boost
 // See: https://roots.io/guides/how-to-use-font-awesome-5-in-sage/
 
@@ -18,7 +18,7 @@ export default {
 
     // add the imported icons to the library
     // library.add(fas, far, fab);
-    library.add(faArrowRight, faArrowLeft, faPlay, faList, faEnvelope, faGraduationCap, faBook, faShoppingBag, faBell, faDownload, faSignInAlt, faExpand, faVrCardboard, faTachometerAlt, faCommentAlt, faHouseUser, faBuilding, faPowerOff, faUsers, faThumbtack, faCubes, faServer, faExternalLinkAlt, faInfoCircle, faQuestionCircle, faDotCircle, faFilePowerpoint, faCompass, faChartBar, faAlignRight, faLocationArrow, faFont, faCalendarAlt, faGithub, faTrello, faSlack, faYoutube, faInstagram, faMedium, faTiktok, faDiscord);
+    library.add(faArrowRight, faArrowLeft, faPlay, faList, faEnvelope, faGraduationCap, faBook, faShoppingBag, faBell, faDownload, faSignInAlt, faExpand, faVrCardboard, faTachometerAlt, faCommentAlt, faHome, faBuilding, faPowerOff, faUsers, faThumbtack, faCubes, faServer, faExternalLinkAlt, faInfoCircle, faQuestionCircle, faDotCircle, faFilePowerpoint, faCompass, faChartBar, faAlignRight, faLocationArrow, faFont, faPalette, faCampground, faEdit, faCog, faSignOutAlt, faCalendarAlt, faGithub, faTrello, faSlack, faYoutube, faInstagram, faMedium, faTiktok, faDiscord, faEthereum, faTwitter, faLinkedin);
 
     // tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
     dom.watch();

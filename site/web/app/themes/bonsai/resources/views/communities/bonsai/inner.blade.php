@@ -13,6 +13,14 @@
   </div>
   <!--   Tab2 -->
 
+  <!--   Tab3 -->
+  @role('subscriber')
+    <div class="tab-pane" id="tab1-3" role="tabpanel">
+      @include('communities.bonsai.tab3')
+    </div>
+  @endrole
+  <!--   Tab3 -->
+
   <!--   Tab4 -->
   @guest
     <div class="tab-pane" id="tab1-4" role="tabpanel">

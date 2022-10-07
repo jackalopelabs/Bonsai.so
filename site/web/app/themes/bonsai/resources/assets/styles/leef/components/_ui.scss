@@ -81,7 +81,7 @@ $bg-dark-2: #191c21;
 
 .button-primary {
   background: $secondary !important;
-  border-radius: 4px !important;
+  // border-radius: 4px !important;
 
   @extend .btn;
   @extend .btn-lg;

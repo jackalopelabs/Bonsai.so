@@ -1,11 +1,19 @@
 <div id="grid" class="my-5">
-  {{-- <h2 class="text-center py-5"><i class="fas fa-location-arrow h3 text-muted"></i> Explore</h2> --}}
-  <h3 class="text-muted font-weight-bold h5">Communities <div type="button" class="btn px-0" data-toggle="tooltip" data-placement="right" title="A space is a specific topic within a group."></div></h3>
-  @include('communities.grid')
 
-  <h3 class="text-muted h5">Courses</h3>
-  @include('courses.grid')
+  @if( get_field('groups_1_cat') )
+    <h3 class="text-muted font-weight-bold h5">@php the_field('groups_1_cat', 2); @endphp</h3>
+    @include('communities.grid')
+  @endif
+
+  @if( get_field('groups_2_cat') )
+    <h3 class="text-muted h5">@php the_field('groups_2_cat'); @endphp</h3>
+    @include('courses.grid')
+  @endif
 </div>
 
-@include('partials.communities')
-@include('partials.courses')
+@if( get_field('groups_1_cat') )
+  @include('partials.communities')
+@endif
+@if( get_field('groups_2_cat') )
+  @include('partials.courses')
+@endif

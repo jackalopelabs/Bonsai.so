@@ -1,7 +1,7 @@
 <div id="community-block" class="sticky-top">
   <div class="flex-s-b ml-2">
     <h3>@title(19)</h3>
-    <img src="@asset('images/rooms/bonsai.svg')" height="33" alt="Bonsai Group" class="pb-1" style="opacity:.25;">
+    @include('svg.bonsai')
   </div>
   <div class="flex-s-b my-3 ml-2">
     <div class="d-flex">
@@ -9,8 +9,11 @@
       <a href="https://github.com/jackalopeio" target="_blank"><i class="fab fa-github h5 text-primary pointer ml-3"></i></a>
       <a href="@permalink(19)" target="_blank"><i class="fas fa-expand h5 text-primary pointer ml-3"></i></a>
     </div>
+    @role('subscriber')
+      <a href="#tab1-3" class="btn btn-sm btn-secondary" style="color: #111;" data-toggle="tab" role="tab">Subscribe<div class="badge badge-secondary text-white ml-2">$15/m</div></a>
+    @endrole
     @guest
-      <a href="#tab1-4" class="btn btn-sm btn-secondary" style="color: #111;" data-toggle="tab" role="tab">Join @title(19)<div class="badge badge-secondary text-white ml-2">$15/m</div></a>
+      <a href="#tab1-4" class="btn btn-sm btn-secondary" style="color: #111;" data-toggle="tab" role="tab">Sign up</a>
     @endguest
   </div>
 
@@ -28,10 +31,17 @@
               <small class="hidden-md-down">Courses</small>
             </a>
           </li>
+          @role('subscriber')
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab1-3" role="tab">
+                <small class="hidden-md-down">Pricing</small>
+              </a>
+            </li>
+          @endrole
           @guest
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#tab1-4" role="tab">
-                <small class="hidden-md-down">Pricing</small>
+                <small class="hidden-md-down">Sign Up</small>
               </a>
             </li>
           @endguest

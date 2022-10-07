@@ -81,11 +81,9 @@ body::-webkit-scrollbar-track {
 //   @extend .d-none;
 // }
 
-// hidden page titles
-.consult-thanks {
-  .page-header {
-    @extend .d-none;
-  }
+// Pages + Posts
+.page-header {
+  @extend .mb-3;
 }
 
 // colors

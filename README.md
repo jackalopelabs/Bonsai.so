@@ -8,10 +8,12 @@
 Bonsai is a custom configuration of [Wordpress](https://wordpress.org/), [Roots](https://roots.io/), [Trellis](https://roots.io/trellis), [Bedrock](https://roots.io/bedrock), [Sage](https://roots.io/sage), [Bootstrap](https://getbootstrap.com/) and other open source projects.
 
 Use Bonsai to apply for billions of dollars of web3 grants. Find a list of the top 25 grants, and application templates [here](https://bonsai.so/resources).
-[![Steal My dApp, I Dare You](https://bonsai.so/app/uploads/2022/10/Screen-Shot-2022-09-29-at-3.25.43-PM.png)](https://youtu.be/IQvjojf65dg)
+Watch the video: [Steal My dApp, I Dare You - Get paid to learn web3](https://youtu.be/IQvjojf65dg)
 
 ### Tutorial
-Trello board: [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
+Official Tutorial: [Bonsai Quick Setup] (https://bonsai.so/bonsai-quick-setup/)
+
+Trello board (Deprecated since v0.0.1): [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
 
 For up to date docs, courses, and video tutorials on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.so) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).
 
@@ -19,16 +21,15 @@ For up to date docs, courses, and video tutorials on creating a Bonsai project f
 
 We're going to take a few minutes to setup all the requirements to ensure that deploying Project Bonsai goes smoothly:
 
-## Download Bonsai
-
-Download project Bonsai from the [official website](https://bonsai.so) or from the [github repository](https://github.com/jackalopeio/bonsai.so/).
-
 Don't forget to move Bonsai from your downloads folder into your `~/Sites` directory.
 
 > OR
 
 To download with the command line, run:
  `cd ~/sites` and `git clone https://github.com/jackalopeio/Bonsai.so.git`
+
+Removed the `.git` file:
+Run: `cd Bonsai.so & rm -rf .git`
 
 ## Requirements
 
@@ -40,7 +41,7 @@ To download with the command line, run:
 
 ### Install Requirements
 **Shell Script:** If you're going to run Bonsai/site/scripts/requirements.sh for installation, don't forget to set permissions by running:
-`cd ~/sites/Bonsai/site/scripts && chmod -R 777 .`
+`cd ~/sites/Bonsai.so/site/scripts && chmod -R 777 .`
 
  - [Install xcode dev tools](https://developer.apple.com/xcode/): `xcode-select --install`
  - [Update to PHP >=7.2](https://jasonmccreary.me/articles/upgrade-php-mac-os-x/)
@@ -61,8 +62,8 @@ To download with the command line, run:
 >## First, Check
 >If you're recreating a project, you may want to check these things just to be sure:
 > - Remove unnecessary Virtualbox machines
-> - Clear: `~/.ssh/known_hosts`
-> - Clear: `~/../../etc/hosts`
+> - Clear: `~/.ssh/known_hosts` file of any duplicates or old hosts
+> - Clear: `~/../../etc/hosts` file of any duplicates or old hosts
 
 # Servers
 
@@ -77,6 +78,8 @@ First, you'll want to make sure that your Domain Registrant points towards [Digi
 
 ### Create Droplets:
 Create two base Ubuntu DigitalOcean Droplets. Link them to your SSH key.
+- Staging-Droplet
+- Production-Droplet
 
 ### Setup DNS:
 
@@ -152,6 +155,6 @@ Additional Tutorials:
 
 Trello board: [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
 
-Roots Trellis Docs: [The Basics](https://roots.io/docs/trellis/master/wordpress-sites/#normal-settings)
+Roots Trellis Docs: [The Basics](https://docs.roots.io/trellis/master/wordpress-sites/)
 
 For a video tutorial on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.so) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).

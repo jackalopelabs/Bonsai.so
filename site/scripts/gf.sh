@@ -8,21 +8,20 @@
 ###############
 
 # Install GF Plugins
-# wp @development gf install --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf install gravityformsadvancedpostcreation --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf install gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf install gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf install gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf install gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @development gf license update 8621321e72cf1753826be6794c56e0ae
+# wp @development gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf install gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf install gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Update GF Plugins
-# wp @development gf update --key=8621321e72cf1753826be6794c56e0ae
-# wp @development gf update gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae
-# wp @development gf update gravityformsslack --key=8621321e72cf1753826be6794c56e0ae
-# wp @development gf update gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae
-# wp @development gf update gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae
-# wp @development gf update gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae
+wp @development gf update --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wp @development gf update gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wp @development gf update gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wp @development gf update gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wp @development gf update gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Create Bonsai Form: ID 1
 # wp @development gf form create "Bonsai Form"
@@ -40,18 +39,19 @@
 #########
 
 # Install GF Plugins
-wp @staging gf install --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @staging gf install gravityformsadvancedpostcreation --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @staging gf install gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @staging gf install gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @staging gf install gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae --activate
-wp @staging gf install gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae --activate
-# wp @staging gf license update 8621321e72cf1753826be6794c56e0ae
+# wp @staging gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf install gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf install gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Update GF Plugins
-# wp @staging gf update --key=8621321e72cf1753826be6794c56e0ae
-# wp @staging gf update gravityformsmailchimp --key=8621321e72cf1753826be6794c56e0ae
-# wp @staging gf update gravityformsslack --key=8621321e72cf1753826be6794c56e0ae
-# wp @staging gf update gravityformsstripe --key=8621321e72cf1753826be6794c56e0ae
-# wp @staging gf update gravityformsuserregistration --key=8621321e72cf1753826be6794c56e0ae
-# wp @staging gf update gravityformssendgrid --key=8621321e72cf1753826be6794c56e0ae
+# wp @staging gf update --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @staging gf install gravityformsadvancedpostcreation --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @staging gf update gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @staging gf update gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @staging gf update gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @staging gf update gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @staging gf update gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -33,6 +33,7 @@
           color: $gray-400;
 
           &.active {
+            border: none !important;
             border-image-source: linear-gradient(45deg, rgb(248, 249, 250), rgb(255, 255, 255));
             border-image-slice: 1;
             color: $primary;
@@ -78,8 +79,20 @@
       a.toggle {
         width: 100%;
         display: block;
-        // background: $primary;
-        // color: #fefefe;
+        padding: 0.75em;
+        border-radius: 0.15em;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.01);
+          background-color: $gray-100 !important;
+        }
+      }
+
+      a.toggle-ext {
+        color: $gray-600;
+        width: 100%;
+        display: block;
         padding: 0.75em;
         border-radius: 0.15em;
         transition: background 0.3s ease;

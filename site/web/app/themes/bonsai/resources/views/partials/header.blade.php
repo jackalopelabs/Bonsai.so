@@ -1,21 +1,29 @@
 <header class="banner py-3" id="nav">
   <div class="mx-5 flex-s-b-c">
     <a class="brand" href="{{ home_url('/') }}">
-      @include('svg.bonsai')
+      @php the_field('logo', 'option'); @endphp
     </a>
 
     <div class="">
       <div class="menu flex-c-c">
         <div class="nav-md row">
           <ul id="menu-primary-nav" class="nav hidden-xs-flex">
-            <li class="pt-0"><a href="/@title(134)">@title(134)</a></li>
-            <li class="pt-0"><a href="/@title(5)">@title(5)</a></li>
-            <li class="pt-0"><a href="/@title(6)">@title(6)</a></li>
-            <li class="pt-0"><a href="/@title(7)">@title(7)</a></li>
+            @if( get_field('navbar_page_1', 'option') )
+              <li class="pt-0"><a href="/@title(671)">@title(671)</a></li>
+            @endif
+            @if( get_field('navbar_page_2', 'option') )
+              <li class="pt-0"><a href="/@title(5)">@title(5)</a></li>
+            @endif
+            @if( get_field('navbar_page_3', 'option') )
+              <li class="pt-0"><a href="/@title(6)">@title(6)</a></li>
+            @endif
+            @if( get_field('navbar_page_4', 'option') )
+              <li class="pt-0"><a href="/grants">Grants</a></li>
+            @endif
           </ul>
           @guest
             <a href="" class="btn btn-sm btn-success px-3 ml-3 text-white login-btn" data-toggle="modal" data-target="#dashboardModal">
-              Login <i class="fas fa-sign-in-alt ml-2"></i>
+              Log in <i class="fas fa-sign-in-alt ml-2"></i>
             </a>
           @endguest
 
@@ -25,13 +33,27 @@
             </a>
           @enduser
 
-          <div class="dropdown menu-item menu-studies ml-3 show">
-            <button class="nav-link clickable btn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">•••</button>
+          <div class="btn-group">
+            <a class="nav-link clickable btn" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text-center mute mb-0 pt-3">•••</span>
+            </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
-              <a class="dropdown-item" href="/@title(134)">@title(134)</a>
-              <a class="dropdown-item" href="/@title(5)">@title(5)</a>
-              <a class="dropdown-item" href="/@title(6)">@title(6)</a>
-              <a class="dropdown-item" href="/@title(7)">@title(7)</a>
+              @if( get_field('navbar_page_1', 'option') )
+                <a class="dropdown-item" href="/@title(134)">@title(134)</a>
+              @endif
+              @if( get_field('navbar_page_2', 'option') )
+                <a class="dropdown-item" href="/@title(5)">@title(5)</a>
+              @endif
+              @if( get_field('navbar_page_3', 'option') )
+                <a class="dropdown-item" href="/@title(6)">@title(6)</a>
+              @endif
+              @if( get_field('navbar_page_4', 'option') )
+                <a class="dropdown-item" href="/@title(7)">@title(7)</a>
+              @endif
+              @user
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/wp/wp-login.php?action=logout">Logout</a>
+              @enduser
             </div>
           </div>
 
