@@ -1,25 +1,32 @@
 [![Bonsai Screenshot](https://bonsai.so/app/uploads/2022/10/screenshot-1.png)](https://bonsai.so)
 # Bonsai
+### Patreon for Web3
 
-[Bonsai](https://bonsai.so) is a secure and modern Wordpress stack.
+[Bonsai](https://bonsai.so) is Patreon for Web3 out of the box.
 
-**The goal:** To simplify the process of building a Roots Wordpress site with a streamlined configuration with a corresponding [tutorial videos](https://bonsai.so/bonsai-quick-setup/).
+It's a **walled garden** for your community.
 
-Bonsai is a custom configuration of [Wordpress](https://wordpress.org/), [Roots](https://roots.io/), [Trellis](https://roots.io/trellis), [Bedrock](https://roots.io/bedrock), [Sage](https://roots.io/sage), [Bootstrap](https://getbootstrap.com/) and other open source projects.
+It provides:
 
-Use Bonsai to apply for billions of dollars of web3 grants. Find a list of the top 25 grants, and application templates [here](https://bonsai.so/resources).
-Watch the video: [Steal My dApp, I Dare You - Get paid to learn web3](https://youtu.be/IQvjojf65dg)
+- Gated access to content for different member tiers
+- Recurring subscriptions with cash or crypto
+- An OS (operating system) for your business or community
 
-### Tutorial
-Official Tutorial: [Bonsai Quick Setup] (https://bonsai.so/bonsai-quick-setup/)
+Bonsai can easily be customized, because it's a custom configuration of [Wordpress](https://wordpress.org/), [Roots](https://roots.io/), [Trellis](https://roots.io/trellis), [Bedrock](https://roots.io/bedrock), [Sage](https://roots.io/sage), [Bootstrap](https://getbootstrap.com/) and other open source projects.
 
-Trello board (Deprecated since v0.0.1): [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
+Product Builders can use Bonsai to build rapid MVPs, then apply for billions of dollars of web3 grants. Find a list of the top 25 grants, and application templates [here](https://bonsai.so/resources).
+
+Watch the explainer video here:
+> [Steal My dApp, I Dare You - Get paid to learn web3](https://youtu.be/IQvjojf65dg)
+
+### Tutorials
+Official Tutorial: [Bonsai Quick Setup](https://bonsai.so/bonsai-quick-setup/)
 
 For up to date docs, courses, and video tutorials on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.so) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).
 
 # Quick Setup
 
-We're going to take a few minutes to setup all the requirements to ensure that deploying Project Bonsai goes smoothly:
+We're going to take a few minutes to setup all the requirements to ensure that deploying Bonsai goes smoothly:
 
 Don't forget to move Bonsai from your downloads folder into your `~/Sites` directory.
 
@@ -28,7 +35,7 @@ Don't forget to move Bonsai from your downloads folder into your `~/Sites` direc
 To download with the command line, run:
  `cd ~/sites` and `git clone https://github.com/jackalopeio/Bonsai.so.git`
 
-Removed the `.git` file:
+Remove the `.git` file:
 Run: `cd Bonsai.so & rm -rf .git`
 
 ## Requirements
@@ -57,7 +64,7 @@ Run: `cd Bonsai.so & rm -rf .git`
  Optional:
  - [Atom](https://atom.io/): `brew cask install --appdir="/Applications" atom`
  - [iTerm2](https://www.iterm2.com/): `brew cask install --appdir="/Applications" iterm2`
- - Github Desktop App: `brew cask install --appdir="/Applications" github-desktop`
+ - [Github Desktop App](https://desktop.github.com/): `brew cask install --appdir="/Applications" github-desktop`
 
 >## First, Check
 >If you're recreating a project, you may want to check these things just to be sure:
@@ -67,7 +74,7 @@ Run: `cd Bonsai.so & rm -rf .git`
 
 # Servers
 
-By default, we use DigitalOcean base Ubuntu servers for Project Bonsai.
+By default, we use DigitalOcean base Ubuntu servers for Bonsai.
 
 ### Nameservers:
 First, you'll want to make sure that your Domain Registrant points towards [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars).
@@ -78,22 +85,22 @@ First, you'll want to make sure that your Domain Registrant points towards [Digi
 
 ### Create Droplets:
 Create two base Ubuntu DigitalOcean Droplets. Link them to your SSH key.
-- Staging-Droplet
-- Production-Droplet
+- `Bonsai-Staging`
+- `Bonsai-Production`
 
 ### Setup DNS:
-
+> Replace bonsai.so with your own domain
  - Go to DigitalOcean's Dashboard > Networking
  - Add new domain or click on existing one
- - A Record: www.subdomain.domain.com
- - A Record: subdomain.domain.com
- - CNAME: *.subdomain.domain.com
+ - A Record: www.staging.bonsai.so
+ - A Record: staging.bonsai.so
+ - CNAME: *.staging.bonsai.so
 
 ### Configure etc/hosts:
 Add IP and domains to `etc/hosts`, run: `sudo vim ~/../../etc/hosts`
 ```
-111.11.111.111 subdomain.example.com
-555.55.555.555 example.com www.example.com
+111.11.111.111 staging.bonsai.so
+555.55.555.555 bonsai.so www.bonsai.so
 ```
 ### Configure ~/.ssh/config:
 Add IP and hostname to `~/.ssh/config`, run: `sudo vim ~/.ssh/config`
@@ -113,8 +120,10 @@ Host bonsai-production
 ### Test SSH Connection:
 Make sure that your SSH connections are working by SSH'ing into the servers:
 
- - Staging, run: `ssh root@subdomain.example.com`
- - Production, run: `ssh root@example.com`
+ - Staging, run: `ssh root@staging.bonsai.so`
+ - Production, run: `ssh root@bonsai.so`
+
+If it connects successfully, you’re good to go.
 
 # Configure Bonsai
 - Create Github Repository
@@ -124,37 +133,46 @@ Make sure that your SSH connections are working by SSH'ing into the servers:
 - Configure site/wp-cli.yml
 - Configure site/scripts
 
-Official Tutorial: [Bonsai Configuration] (https://bonsai.so/bonsai-config/)
+Official Tutorial: [Bonsai Configuration](https://bonsai.so/bonsai-config/)
 
 # Create Local Environment
 Set Permissions:
 - Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
 
 Deploy Local Environment:
-Run: `cd ~/sites/Bonsai/site/scripts && ./development.sh`
+- Run: `cd ~/sites/Bonsai/site/scripts && ./development.sh`
 
-Official Tutorial: [Deploy Local Environment] (https://bonsai.so/bonsai-create-local-environment/)
+Official Tutorial: [Deploy Local Environment](https://bonsai.so/bonsai-create-local-environment/)
 
-#Deploy Staging Environment
-- Commit and Publish to Github
+# Deploy Staging Environment
+- Commit and Publish project to Github
 - Check and verify DNS has propagated
 - Run: `cd ~/sites/bonsai/site/scripts && ./staging.sh`
 
-If you have any permission errors running the script, you need to give your scripts permission. Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
+If you have any permission errors running the script, you need to give your scripts permission.
+- Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
 
-Official Tutorial: [Deploy Staging Environment] (https://bonsai.so/bonsai-deploy-staging-environment/)
+Official Tutorial: [Deploy Staging Environment](https://bonsai.so/bonsai-deploy-staging-environment/)
 
-#Deploy Production Environment
+# Deploy Production Environment
 - Run: `cd ~/sites/bonsai/site/scripts && ./production.sh`
 
-If you have any permission errors running the script, you need to give your scripts permission. Run: `cd ~/sites/Bonsai/site/scripts && chmod -R 777`
+> If you have any permission errors running the script, you need to give
+> your scripts permission. Run: `cd ~/sites/Bonsai/site/scripts && chmod
+> -R 777`
 
-Official Tutorial: [Deploy Staging Environment] (https://bonsai.so/bonsai-deploy-staging-environment/)
+Official Tutorial: [Deploy Staging Environment](https://bonsai.so/bonsai-deploy-staging-environment/)
 
-Additional Tutorials:
+## Where to go from here?
+Bonsai Curious? [Become a member](https://bonsai.so/) and get access to the Bonsai Masterclass. Here you can learn security best practices, automation, APIs, SMPT, SMS, CLIs, and more technical things that are nice to have if your project takes off.
+
+
+## Additional Resources:
 
 Trello board: [Speed Run](https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run)
 
 Roots Trellis Docs: [The Basics](https://docs.roots.io/trellis/master/wordpress-sites/)
+
+Roots Sage Docs: [Getting Started](https://docs.roots.io/sage/9.x/installation/)
 
 For a video tutorial on creating a Bonsai project from scratch, go to  the [official website](https://bonsai.so) or our [Youtube channel](https://www.youtube.com/user/JackalopeMedia/).

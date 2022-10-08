@@ -5,7 +5,7 @@
 # Copyright (c) Mason Lawlor
 
 # Clean DB
-wp @development db clean
+# wp @development db clean
 
 # Composer install Wordpress and Plugins
 cd ..
@@ -28,7 +28,7 @@ composer install
 cd ../../../..
 
 # Install WP CORE
-wp @development core install --url=bonsai.so --title=Bonsai_App --admin_user=masoninthesis --admin_password=admin --admin_email=mason@jackalope.io
+wp @development core install --url=bonsai.so --title=Bonsai_App --admin_user=admin --admin_password=admin --admin_email=mason@jackalope.io
 # Activate theme, create pages, and config reading settings
 wp @development theme activate bonsai/resources
 wp @development plugin activate --all
@@ -46,7 +46,6 @@ wp @development post create --post_type=page --post_title=Docs --post_status=pub
 wp @development post create --post_type=page --post_title=Events ./content/events.html --post_status=publish
 wp @development post create --post_type=page --post_title="Enrollment" ./content/enrollment.html --post_status=publish --page_template='views/template-enrollment.blade.php'
 wp @development post create --post_type=page --post_title=TV --post_status=publish
-wp @development post create --post_type=page --post_title="Pre-Seed" --post_status=publish --page_template='views/template-preseed.blade.php'
 
 
 # Create Posts

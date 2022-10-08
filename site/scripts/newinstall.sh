@@ -6,15 +6,10 @@
 
 # Core Functionality
 echo Install Core Apps
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" little-snitch
-brew cask install --appdir="~/Applications" transmit
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" vlc
-
-## get from App Store
-brew cask install --appdir="/Applications" evernote
+# brew cask install --appdir="/Applications" dropbox
+# brew cask install --appdir="/Applications" little-snitch
+# brew cask install --appdir="~/Applications" transmit
+# brew cask install --appdir="~/Applications" vlc
 
 # Development
 echo Install Dev Apps
@@ -23,16 +18,12 @@ brew cask install --appdir="/Applications" phpstorm
 # Google Slavery
 echo Install Google Apps | Chrome not included cause of 1Password Plugin
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-drive
+# brew cask install --appdir="/Applications" google-drive
 
 # Nice to have
 echo Install Some additional Apps
-brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" spotify
-brew cask install --appdir="/Applications" spotify-notifications
-
-# Link Cask Apps to Alfred
-brew cask alfred link
 
 # Install mas, a CLI for Mac App Store
 brew install mas
